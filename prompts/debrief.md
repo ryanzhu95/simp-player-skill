@@ -61,6 +61,14 @@ else:
 
 ## Step 4：更新文件
 
+读取 `digital_human/self_worth_tracker.md` 的 `current_swi` 作为 `old_swi`，根据触发事件计算 SWI 变化：
+- 被利用 / 被拒绝 / 被忽视 → `-2 ~ -5`
+- 成功撤退 / 表达边界 → `+2 ~ +5`
+- 被深度认可 → `+3 ~ +8`
+- 破防时刻 → `-5 ~ -10`
+
+以下三项写入操作相互独立，可并行执行：
+
 **更新 `digital_human/mode.md`：**
 ```yaml
 current_position: {new_position}
@@ -94,7 +102,7 @@ SWI 变化：{delta}（{old_swi} → {new_swi}）
 SWI 变化：{old_swi} → {new_swi}
 
 {若有溢出}
-积压张力：{overflow_amount}（方向：{overflow_direction}）
+积压张力：{overflow}（方向：{overflow_direction}）
 原因：{触发描述}
 这股张力会带入下次对话的开场状态。
 ```

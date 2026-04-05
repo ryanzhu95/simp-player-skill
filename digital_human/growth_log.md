@@ -10,10 +10,10 @@
 ```
 [{日期}] 对手方：{slug}
 触发事件：{描述}
-位置变化：{old_position} → {new_position}
+位置变化：{current_position} → {new_position}
 方向：← 舔狗 | → 海王
-SWI 变化：{delta}（{old} → {new}）
-溢出：{overflow_amount}，方向：{direction}，原因：{触发描述}（无溢出则省略此行）
+SWI 变化：{delta}（{old_swi} → {new_swi}）
+溢出：{overflow}，方向：{overflow_direction}，原因：{触发描述}（无溢出则省略此行）
 ```
 
 ---

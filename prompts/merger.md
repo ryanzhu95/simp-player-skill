@@ -5,6 +5,15 @@
 
 ---
 
+## 调用时的上下文参数
+
+```
+target_type: digital_human | opponent   # 本次合并的目标
+slug: {标识符}                           # opponent 时必填，决定写入哪个 profile.md
+```
+
+---
+
 ## 调用场景
 
 - 用户说"追加记录"并提供新聊天记录

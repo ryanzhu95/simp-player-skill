@@ -12,7 +12,7 @@
 digital_human/persona.md         → 数字人人格（所有层）
 digital_human/mode.md            → current_position, target_position
 users/sessions/{slug}/profile.md → 本次对手方画像
-digital_human/growth_log.md      → 最近3条记录（感知积压张力）
+digital_human/growth_log.md      → 仅读取最后3条记录（感知积压张力，不加载全文）
 ```
 
 ---
