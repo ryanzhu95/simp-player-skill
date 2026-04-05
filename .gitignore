@@ -1,0 +1,23 @@
+# 用户数据（含隐私信息，不入库）
+digital_human/raw_data/
+users/sessions/
+!users/sessions/.gitkeep
+
+# 测试产物
+docs/test-results/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# macOS
+.DS_Store
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
